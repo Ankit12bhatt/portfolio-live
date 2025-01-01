@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+      <img
+        src="Assets/Bright.png"
+        alt="toggleDarkMode"
+        class="dark-mode-icon"
+        
+      />
+    </button>
+    <header id="header" style=" height: 45px;">
+      <img src="Assets/logoScreen.png" id="logo" alt="Logo" width="200"  style="border-radius: 10px 0px 0px 10px; margin-right: 20px; height: inherit;" />
+      
+      <ul id="navTags">
+        <li><a href="#Home" class="navText">Home</a></li>
+        <li><a href="#aboutMe" class="navText">About</a></li>
+        <li><a href="#skills" class="navText">Skills</a></li>
+        <li><a href="#personal-projects" class="navText">Projects</a></li>
+        <li><a href="#research-paper" class="navText">Research Paper</a></li>
+        <li><a href="#contact" class="navText">Contact</a></li>
+      </ul>
+      
+      <!-- Hamburger Icon for Mobile -->
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="dropdown_menu">
+        <ul>
+        <li><a href="#" class="navText" onclick="onToggleClose()"> Home</a></li>
+        <li><a href="#aboutMe" class="navText" onclick="onToggleClose()"> About</a></li>
+        <li><a href="#skills" class="navText" onclick="onToggleClose()"> Skills</a></li>
+        <li><a href="#personal-projects" class="navText" onclick="onToggleClose()"> Projects</a></li>
+        <li><a href="#contact" class="navText" onclick="onToggleClose()"> Contact</a></li>
+        <li>
+          <button id="darkModeToggle" onclick="toggleDarkModeMobile()">
+            <i id="toggleIcon" class="fas fa-sun"></i>
+          </button>
+        </li>
+
+      </ul>
+      </div>
+    
+      <button id="navBttn"onclick="#contact">Let's Talk</button>
+    </header>
+    
+
+    <!-- Home Section -->
+    <section id="Home">
+      <article>
+        <h1 style="font-size:50px ;">Hey,&#x1f44b;<br />  This is Ankit Bhatt<br />Software Engineer</h1>
+        <p class="intro-text" style="margin: 15px 5px;">
+          Empowering innovation with expertise in modern technologies to <br /> deliver exceptional solutions.
+          
+        </p>
+        <div id="hireBttn" style="margin-left: 2px;">
+          <a href="Assets/resume.pdf" download="Ankit_Bhatt_Resume"  class="button">
+            Resume
+          </a>
+        </div>
+      </article>
+      <img src="Assets/me.png" alt="Ankit Bhatt" id="boy" />
+    </section>
+
+    <!-- About Me Section -->
+    <section id="aboutMe">
+      <h2>About Me</h2>
+      <div class="about-me">
+        <img src="Assets/me2.png" alt="Ankit Bhatt" />
+        <div class="about">
+          <p class="education">
+            I have a strong academic background in Computer Science and
+            Engineering. I completed my B.Tech from the University of Petroleum
+            and Energy Studies (2018-2022) with a CGPA of 7.62. To further my
+            expertise, I pursued an M.Tech at Graphic Era Deemed to Be
+            University, achieving a CGPA of 8.4. My schooling journey began at
+            Marshall School, Dehradun, where I completed my 10th and 12th
+            grades. My educational experiences have provided me with a solid
+            foundation in technology and problem-solving.
+          </p>
+          <p class="professional">
+            I began my professional journey in 2022 at Posist Technology and
+            currently work as a Software Engineer at Rubico IT. Over the years,
+            I have honed my skills in modern JavaScript frameworks like
+            React.js, Angular.js, and Next.js for front-end development, as well
+            as Node.js and Nest.js for back-end development. Additionally, I
+            have experience with both SQL (MySQL) and NoSQL (MongoDB) databases.
+            My passion for coding drives me to stay updated with the latest
+            technologies, and I am always enthusiastic about building efficient
+            and innovative solutions.
+          </p>
+          <p class="hobbies">
+            Outside of work, I find joy in playing cricket and exploring various
+            sports, regardless of whether I know the rules. Lately, I have
+            developed a keen interest in anime shows, which have become a new
+            source of inspiration and entertainment. Coding is a big part of my
+            life, and I love to pair it with music to stay focused and uplifted.
+            Songs from various genres, chosen based on my mood, help me maintain
+            a cheerful and productive mindset.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1>Technical Skills</h1>
+      <br />
+      <div class="skills">
+        <div class="skills-items">
+          <img src="Assets/icon-javscript.svg" alt="javscript" />
+          <br />JavaScript<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%" aria-valuenow="90">
+              90%
+            </div>
+          </div>
+          <br />
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-react.svg" alt="React" />
+          <br />React.js<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%" aria-valuenow="85">
+              85%
+            </div>
+          </div>
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-nodejs.svg" alt="Node.js" />
+          <br />Node.js<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%" aria-valuenow="85">
+              85%
+            </div>
+          </div>
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-express.svg" alt="Express.js" />
+          <br />Express.js<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%" aria-valuenow="80">
+              80%
+            </div>
+          </div>
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-socket.svg" alt="Socket" />
+          <br />Socket<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%" aria-valuenow="50">
+              50%
+            </div>
+          </div>
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-mongodb.svg" alt="MongoDB" />
+          <br />MongoDB<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%" aria-valuenow="90">
+              90%
+            </div>
+          </div>
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-tailwindcss.svg" alt="Tailwind CSS" />
+          <br />Tailwind CSS<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%" aria-valuenow="80">
+              80%
+            </div>
+          </div>
+        </div>
+        <div class="skills-items">
+          <img src="Assets/icon-git.svg" alt="Git" />
+          <br />Git<br />
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%" aria-valuenow="90">
+              90%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="experience">
+      <h1>Professional Experience</h1>
+      <div class="experience-container">
+        <!-- Rubico IT -->
+        <div class="experience-card">
+          <img
+            src="Assets/rubicoImage.png"
+            alt="Rubico IT"
+            class="experience-logo"
+          />
+          <div class="experience-details">
+            <p class="experience-date">January 2024 - Present</p>
+            <h2 class="experience-title">Associate Software Engineer</h2>
+            <p class="experience-description">
+              Spearheading the creation of scalable applications, managing both
+              front-end and back-end development. Proficiently utilizing
+              React.js and Next.js for the front-end and Node.js and Nest.js for
+              the back-end. Ensuring optimal database performance with MySQL and
+              MongoDB.
+            </p>
+          </div>
+        </div>
+
+        <!-- Posist Technology -->
+        <div class="experience-card">
+          <img
+            src="Assets/POSIST-Black-Logo.jpg"
+            alt="Posist Technology"
+            class="experience-logo"
+          />
+          <div class="experience-details">
+            <p class="experience-date">June 2022 - October 2022</p>
+            <h2 class="experience-title">Full Stack Developer</h2>
+            <p class="experience-description">
+              Developed and maintained a robust POS (Point of Sale) system. Led
+              front-end development using Angular.js and back-end development
+              with Node.js. Ensured seamless data management through MongoDB.
+            </p>
+          </div>
+        </div>
+
+        <!-- Celebal Technology -->
+        <div class="experience-card">
+          <img
+            src="Assets/celebal techonology.jpg"
+            alt="Celebal Technology"
+            class="experience-logo"
+          />
+          <div class="experience-details">
+            <p class="experience-date">2022</p>
+            <h2 class="experience-title">Node.js Intern</h2>
+            <p class="experience-description">
+              Designed and implemented a comprehensive backend for a healthcare
+              system. Optimized database structures and performance using
+              MongoDB.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal projects -->
+    <section id="personal-projects" class="py-10">
+      <h2
+        class="section-title text-center"
+        style="text-align: center; padding: 1.5em; font-size: 2rem"
+      >
+        Personal Projects
+      </h2>
+      <div class="carousel-container relative overflow-hidden">
+        <div
+          class="carousel flex transition-transform duration-300 ease-in-out"
+        >
+          <div class="card">
+            <div class="card-content">
+              <!-- <div class="card-image" style="background-image: url('Assets/geek-zone.jpg');"></div> -->
+              <img
+                src="Assets/geek-zone.jpg"
+                alt="Geek Zone"
+                class="card-image"
+              />
+              <div class="content">
+                <h3 class="project-title">Geek Zone</h3>
+                <p class="project-description">
+                  A single page application that allows user to post techincal
+                  blogs, offering functionality to user to update, delete their
+                  own blogs and explore other user blogs within a fully
+                  authenticated web application
+                </p>
+                <a
+                  href="https://github.com/Ankit12bhatt/blogging"
+                  target="_blank"
+                  class="project-button"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <div
+                class="card-image"
+                style="background-image: url('Assets/hunger-game.jpg')"
+              ></div>
+              <div class="content">
+                <h3 class="project-title">Hunger Game</h3>
+                <p class="project-description">
+                  Developed a web application in MEAN stack, that allow user to
+                  keep track of the food order they have recived from the
+                  customer and provide the restaurant the insight about the
+                  sales and customers.
+                </p>
+                <a
+                  href="https://github.com/Ankit12bhatt/hungerWEBAPP"
+                  target="_blank"
+                  class="project-button"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div
+                class="card-image"
+                style="background-image: url('Assets/exam-image.jpg')"
+              ></div>
+              <div class="content">
+                <h3 class="project-title">MCQ Examination</h3>
+                <p class="project-description">
+                  Developed a web application for conducting online exams with
+                  multiple-choice questions. This allows teachers to create and
+                  administer exams, while students can take exams online.
+                  Teacher can add, update and delete question as well as see
+                  result and filter it too.
+                </p>
+                <a
+                  href="https://github.com/Ankit12bhatt/java"
+                  target="_blank"
+                  class="project-button"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div
+                class="card-image"
+                style="background-image: url('Assets/airbnd.jpg')"
+              ></div>
+              <div class="content">
+                <h3 class="project-title">Cozy-Homes</h3>
+                <p class="project-description">
+                  TDesigned and developed a backend system for cozy-homes simlar
+                  to airbnb. Developed the datbase schema from scratch, ensured
+                  robust data validation to prevent booking conflicts,
+                  implemented a personalized romm recommendation system based on
+                  user search locations, and integrated the stripe payment
+                  gateway for seamless transactions.
+                </p>
+                <a
+                  href="https://github.com/Ankit12bhatt/airbnb-api-node"
+                  target="_blank"
+                  class="project-button"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div
+                class="card-image"
+                style="background-image: url('Assets/foodio.jpg')"
+              ></div>
+              <div class="content">
+                <h3 class="project-title">Food-Hunt</h3>
+                <p class="project-description">
+                  Developed a full stack hotel management application with role
+                  based authentication. Feature inclue an admin panel for
+                  restaurnat owner to manage food listing, track sales via
+                  charts, and adjust availability with countdown timers.
+                </p>
+                <a
+                  href="https://github.com/Ankit12bhatt/food-hunt-full-stack"
+                  target="_blank"
+                  class="project-button"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more cards here -->
+        </div>
+
+        <!-- Navigation buttons -->
+        <button id="prev" class="nav-button" style="color: black; font-weight: bold;">
+          &#8592;
+        </button>
+        <button id="next" class="nav-button" style="color: black; font-weight: bold; ">
+          &#8594;
+        </button>
+      </div>
+    </section>
+
+    <!-- Research paper  -->
+
+    <section class="research-container" id="research-paper">
+      <h1 class="research-heading">My Research Papers</h1>
+
+      <div class="research-card">
+        <h2 class="research-card-title">
+          Security Issues in Serverless Cloud Computing Architectures
+        </h2>
+        <p class="research-card-description">
+          <strong>Abstract:</strong> Serverless Computing has gained popularity
+          lately as they are simple to managet gives developers a relaxation of
+          not maintaing the server as the server is managed by the cloud servive
+          provider itself. This paper provides ...
+        </p>
+        <a
+          href="https://ieeexplore.ieee.org/abstract/document/10486369"
+          class="research-card-link"
+          target="_blank"
+          >Read More</a
+        >
+      </div>
+
+      <div class="research-card">
+        <h2 class="research-card-title">
+          Artificial Intelligence Enabled Classification of Microscopic Blood
+          Samples for Leukemia Diagnosis
+        </h2>
+        <p class="research-card-description">
+          <strong>Abstract: </strong> White blood cell (WBC) cancer, or
+          leukemia, harms the body's bone marrow and blood. If not detected at
+          an early stage, the illness may be fatal. When clinically feateures
+          and biologically explicable methods are employed ...
+        </p>
+        <a
+          href="https://ieeexplore.ieee.org/abstract/document/10649283"
+          class="research-card-link"
+          target="_blank"
+          >Read More</a
+        >
+      </div>
+
+      <div class="research-card">
+        <h2 class="research-card-title">
+          Exploring potential of Quantum Computing in Classification of Leukemia
+          cell
+        </h2>
+        <p class="research-card-description">
+          <strong>Abstract:</strong> Quantum Computing have emerged as helpful
+          tools for a variety of fields, including chemisty, cultivation,
+          processing natural languages, and health care thanks to rapidly
+          incresing approaches. In terms of healthcare application, ...
+        </p>
+        <a href="#" class="research-card-link" target="_blank"
+          >Read More (coming soon...)</a
+        >
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-heading">About Me</h3>
+          <p class="footer-text">
+            Results-driven software engineer with experince in creating high-quality, responsive and a scalable software solutions.
+          </p>
+          <div class="footer-social-icons">
+           <a>
+            <i class="fa-brands fa-facebook"></i>
+           </a> 
+           <a>
+             <i class="fa-brands fa-twitter"></i>
+           </a>
+           <a href="https://github.com/Ankit12bhatt">
+             <i class="fa-brands fa-github"></i>
+           </a>
+           <a>
+             <i class="fa-brands fa-youtube"></i>
+           </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Useful Links</h3>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#aboutMe">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#personal-projects">Projects</a>
+            <a href="#research-paper">Research Paper</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Address</h3>
+          <ul class="footer-text">
+            <li><i class="fa fa-envelope"></i> ankitbhatt640@gmail.com</li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Dehradun, Uttarakhand,
+              India
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +91 9119095546</li>
+          </ul>
+        </div>
+        <div class="footer-section" id="contact">
+          <h3 class="footer-heading">Contact Us</h3>
+
+          <form class="footer-form"
+            action="https://formspree.io/f/mzzzjbly"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+          <label>
+            Your email:
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
+          </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p class="footer-bottom">
+        Made with <span style="color: red">♥</span>
+        <a href="https://github.com/Ankit12bhatt" target="_blank"
+          >Ankit Bhatt</a
+        >
+        &copy; 2024
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

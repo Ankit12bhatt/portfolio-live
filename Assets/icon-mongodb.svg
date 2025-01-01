@@ -1,0 +1,34 @@
+<svg width="31" height="64" viewBox="0 0 31 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="31" height="64" fill="#F5F5F5"/>
+<g id="Home / Desktop / Light" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="6498" transform="translate(-321 -1946)" fill="white"/>
+<g id="Skills">
+<rect width="1440" height="560" transform="translate(-321 -364)" fill="white"/>
+<g id="Container">
+<g id="Row">
+<g id="Row_2" clip-path="url(#clip1_0_1)">
+<g id="Tech" clip-path="url(#clip2_0_1)">
+<g id="icon-mongodb" clip-path="url(#clip3_0_1)">
+<path id="Vector" d="M21.0323 7.13325C18.3343 3.94632 16.0111 0.709589 15.5365 0.0373468C15.4865 -0.0124489 15.4115 -0.0124489 15.3616 0.0373468C14.8869 0.709589 12.5637 3.94632 9.86574 7.13325C-13.2916 36.5376 13.513 56.3813 13.513 56.3813L13.7378 56.5306C13.9377 59.5932 14.4373 64 14.4373 64H15.4365H16.4358C16.4358 64 16.9354 59.618 17.1352 56.5306L17.36 56.3565C17.385 56.3565 44.1896 36.5376 21.0323 7.13325ZM15.4365 55.933C15.4365 55.933 14.2374 54.9123 13.9127 54.3893V54.3397L15.3616 22.3209C15.3616 22.2213 15.5115 22.2213 15.5115 22.3209L16.9604 54.3397V54.3893C16.6356 54.9123 15.4365 55.933 15.4365 55.933Z" fill="#00684A"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="6498" fill="white" transform="translate(-321 -1946)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1216" height="100" fill="white" transform="translate(-209)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="84" height="100" fill="white" transform="translate(-26.6753)"/>
+</clipPath>
+<clipPath id="clip3_0_1">
+<rect width="29.7674" height="64" fill="white" transform="translate(0.440918)"/>
+</clipPath>
+</defs>
+</svg>
